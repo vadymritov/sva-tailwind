@@ -30,8 +30,8 @@
 }
 
 .banner-section {
-  @apply bg-[#f6f8fb] bg-[url("/src/assets/images/banner_mobile.jpg")] bg-contain bg-bottom bg-no-repeat;
-  @apply lg:bg-[url("/src/assets/images/banner_desktop.jpg")] lg:bg-[length:auto_100%] lg:bg-right;
+  @apply bg-[#f6f8fb] bg-[url("../src/assets/images/banner_mobile.jpg")] bg-contain bg-bottom bg-no-repeat;
+  @apply lg:bg-[url("../src/assets/images/banner_desktop.jpg")] lg:bg-[length:auto_100%] lg:bg-right;
   @apply pt-12 pb-[70vw] md:pt-12 lg:py-16 2xl:py-32;
   @apply border-t border-b border-t-zinc-200 border-b-zinc-200;
 }
@@ -228,7 +228,7 @@
 }
 
 .book-section {
-  @apply bg-[#f1f1f9] bg-[url("/src/assets/images/bg_city.png")] bg-[length:850px] bg-bottom bg-no-repeat;
+  @apply bg-[#f1f1f9] bg-[url("../src/assets/images/bg_city.png")] bg-[length:850px] bg-bottom bg-no-repeat;
   @apply sm:bg-[length:1300px] md:bg-auto;
   @apply py-12 text-center sm:pt-16 sm:pb-24 md:pt-24 md:pb-36;
 }

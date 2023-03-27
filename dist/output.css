@@ -109,7 +109,7 @@
 .banner-section{
   --tw-bg-opacity: 1;
   background-color: rgb(246 248 251 / var(--tw-bg-opacity));
-  background-image: url("/src/assets/images/banner_mobile.jpg");
+  background-image: url("../src/assets/images/banner_mobile.jpg");
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -117,7 +117,7 @@
 
 @media (min-width: 1024px){
   .banner-section{
-    background-image: url("/src/assets/images/banner_desktop.jpg");
+    background-image: url("../src/assets/images/banner_desktop.jpg");
     background-size: auto 100%;
     background-position: right;
   }
@@ -1117,7 +1117,7 @@
 .book-section{
   --tw-bg-opacity: 1;
   background-color: rgb(241 241 249 / var(--tw-bg-opacity));
-  background-image: url("/src/assets/images/bg_city.png");
+  background-image: url("../src/assets/images/bg_city.png");
   background-size: 850px;
   background-position: bottom;
   background-repeat: no-repeat;
