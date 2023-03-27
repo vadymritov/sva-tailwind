@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <div class="container flex items-center">
+            <div class="flex w-full items-center gap-2 sm:gap-4 lg:gap-8">
+              <img
+                class="w-[60px] sm:w-[80px] lg:w-[112px]"
+                src="./assets/images/logo_black.png"
+              />
+              <div class="flex flex-1 flex-col gap-1 lg:pt-6">
+                <div class="nav-title">A Better Way to Run Your Campaign</div>
+                <div class="nav-desc">
+                  Designed and built in Canada for Canadian political and public
+                  engagement campaigns.
+                </div>
+              </div>
+              <button
+                class="hidden w-[180px] items-center justify-center rounded border border-black py-2 font-semibold uppercase md:gap-2 lg:flex"
+              >
+                <img
+                  src="./assets/images/icon_sm_user_nav.png"
+                  width="20"
+                  alt=""
+                />
+                <span>client sign in</span>
+              </button>
+            </div>
+            <div class="my-auto ml-auto block cursor-pointer lg:hidden">
+              <div id="mobile-menu-button" class="group peer">
+                <div
+                  class="relative top-0 h-1 w-8 bg-black transition-all group-open:top-3 group-open:rotate-45"
+                ></div>
+                <div
+                  class="my-2 h-1 w-8 bg-black transition-all group-open:opacity-0"
+                ></div>
+                <div
+                  class="relative top-0 h-1 w-8 bg-black transition-all group-open:-top-3 group-open:-rotate-45"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Menu -->
+          <div
+            class="absolute left-0 top-[80px] hidden w-[100vw] bg-white peer-open:block"
+          >
+            <div
+              class="flex h-full cursor-pointer justify-center p-4 font-bold"
+            >
+              <span>Request a Demo</span>
+            </div>
+            <div
+              class="flex h-full cursor-pointer justify-center p-4 font-bold"
+            >
+              <span>About our Products</span>
+            </div>
+            <div
+              class="flex h-full cursor-pointer justify-center p-4 font-bold"
+            >
+              <span>About Election Assistant</span>
+            </div>
+            <div
+              class="flex h-full cursor-pointer justify-center p-4 font-bold"
+            >
+              <span>About your Campaign</span>
+            </div>
+          </div>
+          <!-- Mobile Menu End -->
+        </nav>
+        <!-- Desktop Menu -->
+        <div class="hidden border-t border-t-zinc-200 lg:block">
+          <div class="container">
+            <div class="flex items-center">
+              <a href="#" class="menu-items"> Request a Demo </a>
+              <a href="#" class="menu-items"> About our Products </a>
+              <a href="#" class="menu-items"> About Election Assistant </a>
+              <a href="#" class="menu-items"> About your Campaign </a>
+            </div>
+          </div>
+        </div>
+        <!-- Desktop Menu End -->
+      </header>
+      <section class="banner-section">
+        <div class="container">
+          <div class="banner-wrapper">
+            <h1>Keep Your Campaigns Organized From Start to Finish.</h1>
+            <p class="py-2">
+              Election Assistant is an all in one suite of tools to make
+              campaign management a breeze. Whether you’re running a political
+              ampaign or advocating for a cause, Election Assistant and its
+              companion tools can help coordinate your volunteer efforts, public
+              engagement, voter contact, fundraising, and communications all
+              with a single source of truth.
+            </p>
+            <button class="btn btn-black">REQUEST A DEMO</button>
+          </div>
+        </div>
+      </section>
+      <section class="demo-section">
+        <div class="container">
+          <div class="lg:flex-1">
+            <h2>Request a Demo</h2>
+            <p>
+              Let us show what a difference an all in one campaign software
+              suite can make to your advocacy or electoral aspirations.
+            </p>
+            <p>
+              Sign up for a no obligation demonstration of Election Assistant
+              and On Target, our non profit toolset.
+            </p>
+            <p>
+              We’ll walk you through the software, while answering your
+              questions about how our tools can meet your specific needs.
+            </p>
+          </div>
+          <div class="lg:flex-1">
+            <form class="my-8 border border-slate-300 shadow-lg lg:mt-0">
+              <div class="form-wrapper">
+                <img class="h-5 w-5" src="./assets/images/icon_sm_user.png" />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Full Name"
+                />
+              </div>
+              <div class="form-wrapper">
+                <img
+                  class="h-5 w-5"
+                  src="./assets/images/icon_sm_mail.png"
+                  alt=""
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="form-wrapper">
+                <img
+                  class="h-5 w-5"
+                  src="./assets/images/icon_sm_phone.png"
+                  alt=""
+                />
+                <input type="text" class="form-control" placeholder="Phone" />
+              </div>
+              <div class="form-wrapper items-start">
+                <img
+                  class="mt-[6px] h-5 w-5"
+                  src="./assets/images/icon_sm_message.png"
+                  alt=""
+                />
+                <textarea
+                  class="relative m-0 block w-[1px] min-w-0 flex-auto border-none bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition ease-in-out focus:z-[3] focus:text-neutral-700 focus:outline-none focus:ring-0"
+                  rows="6"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+            </form>
+            <button class="btn btn-black lg:float-right">SEND</button>
+          </div>
+        </div>
+      </section>
+      <section class="products-section">
+        <div class="container">
+          <div class="lg:flex-1">
+            <h2>About Our Products.</h2>
+            <p>
+              Our suite of software has been designed by experienced political
+              campaign managers, activists, business leaders and software
+              engineers to meet your needs.
+            </p>
+            <p class="lg:mb-0">
+              Many of these tools can be used on their own, but are designed to
+              function together, providing you with an all in one package to
+              help you win your campaign, whether that is for public office, or
+              for the public good.
+            </p>
+          </div>
+          <div class="products-wrapper">
+            <div class="products-block">
+              <img
+                class="h-auto w-10 md:w-[52px]"
+                src="./assets/images/icon_megaphone.png"
+              />
+              <div class="products-desc">The Single Source of Truth</div>
+            </div>
+            <div class="products-block 2xl:px-3">
+              <img
+                class="h-auto w-10 md:w-[52px] 2xl:mx-1"
+                src="./assets/images/icon_phone.png"
+              />
+              <div class="products-desc">Hubsy Engagement Tool</div>
+            </div>
+            <div class="products-block">
+              <img
+                class="h-auto w-10 md:w-[52px]"
+                src="./assets/images/icon_fun.png"
+              />
+              <div class="products-desc">Fundraising Made Fun</div>
+            </div>
+            <div class="products-block">
+              <img
+                class="h-auto w-10 md:w-[52px]"
+                src="./assets/images/icon_volunteer.png"
+              />
+              <div class="products-desc">Volunteer Coordinator</div>
+            </div>
+            <div class="products-block">
+              <img
+                class="h-auto w-10 md:w-[52px]"
+                src="./assets/images/icon_doorstep.png"
+              />
+              <div class="products-desc">On the Doorstep</div>
+            </div>
+            <div class="products-block">
+              <img
+                class="h-auto w-10 md:w-[52px]"
+                src="./assets/images/icon_calendar.png"
+              />
+              <div class="products-desc">Candidate Calendar</div>
+            </div>
+            <div class="products-block">
+              <img
+                class="h-auto w-10 md:w-[52px]"
+                src="./assets/images/icon_lawnsign.png"
+              />
+              <div class="products-desc">Lawn Sign Planner</div>
+            </div>
+            <div class="products-block">
+              <img
+                class="h-auto w-10 md:w-[52px]"
+                src="./assets/images/icon_redistricting.png"
+              />
+              <div class="products-desc">Redistricting Services</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="candidate-section">
+        <div class="container">
+          <div class="image-container">
+            <div class="image-wrapper">
+              <img class="main" src="./assets/images/img_map.jpg" />
+            </div>
+            <img class="left" src="./assets/images/img_candidate_left.jpg" />
+            <img class="right" src="./assets/images/img_candidate_right.jpg" />
+          </div>
+          <div class="lg:order-1 lg:flex-1">
+            <h2>You're a Political Party or Candidate.</h2>
+            <p>
+              Congratulations and good luck. You've put your name forward for
+              office, or you're part of a team trying to elect representatives
+              to form government.
+            </p>
+            <p>
+              You need a purpose built set of tools to manage voter contract,
+              track donors, coordinate your volunteers, manage sign
+              distribution, and keep the candidate on track. You've come to the
+              right place.
+            </p>
+            <p>
+              Have a look at how a single source of truth can change everything.
+            </p>
+            <button class="btn btn-black mt-8">BOOK A DEMO</button>
+          </div>
+        </div>
+      </section>
+      <section class="donate-section">
+        <div class="container">
+          <div class="image-container">
+            <div class="image-wrapper">
+              <img class="main" src="./assets/images/img_ads.jpg" />
+            </div>
+            <img class="left" src="./assets/images/img_donate_left.jpg" />
+            <img class="right" src="./assets/images/img_donate_right.jpg" />
+          </div>
+          <div class="lg:order-1 lg:flex-1">
+            <h2 class="lg:max-w-[390px]">I'm a Charity or Non Profit.</h2>
+            <p>
+              Don't let the name fool you, if you operate a charity, non profit,
+              union, or other advocacy organization, we're here for you too.
+              That's why we've custom designed On Target for non profit
+              organizations, charities and unions.
+            </p>
+            <p>
+              It turns out that our single source of truth based software is
+              exactly what you need to advocate for your cause. The
+              sophistication that non profits, unions and charities need to
+              advance their cause is what Election Assistant can provide. Have a
+              look at our suite of tools, and then get in touch to book a demo
+              today.
+            </p>
+            <button class="btn btn-black my-8">BOOK A DEMO</button>
+          </div>
+        </div>
+      </section>
+      <section class="team-section">
+        <div class="container">
+          <div>
+            <h2>About Election Assistant.</h2>
+            <p>
+              A software developer, a business leader, and a political organizer
+              walked into a bar.
+            </p>
+            <p>
+              Its no joke. When you bring different political views, skills and
+              experience together what you get is Election Assistant.
+            </p>
+            <div class="mt-12 hidden lg:flex lg:items-center lg:gap-8">
+              <div class="title mt-2">Meet the team</div>
+              <img src="./assets/images/img_marydale_arrow.png" />
+            </div>
+          </div>
+          <div class="flex">
+            <div class="w-1/3 lg:hidden">
+              <div class="title">Meet the team</div>
+              <img
+                class="m-2 block w-[40px]"
+                src="./assets/images/img_marydale_arrow_mobile.png"
+              />
+            </div>
+            <div class="flex w-2/3 flex-wrap justify-between gap-y-4 lg:w-3/4">
+              <div class="w-[48%]">
+                <img src="./assets/images/avatar_shawn.jpg" />
+                <div class="py-2 text-base sm:py-3 sm:text-lg">Shawn</div>
+              </div>
+              <div class="w-[48%]">
+                <img src="./assets/images/avatar_terry.jpg" />
+                <div class="py-2 text-base sm:py-3 sm:text-lg">Terry</div>
+              </div>
+              <div class="w-[48%]">
+                <img src="./assets/images/avatar_dave.jpg" />
+                <div class="py-2 text-base sm:py-3 sm:text-lg">Dave</div>
+              </div>
+              <div class="w-[48%]">
+                <img src="./assets/images/avatar_steph.jpg" />
+                <div class="py-2 text-base sm:py-3 sm:text-lg">Steph</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="campaign-section">
+        <div class="container">
+          <div class="flex-1">
+            <h2>About Your Campaign.</h2>
+            <p>
+              Election Assistant allows for different levels of sophistication,
+              and different entry points based on your needs experience and
+              expectations.
+            </p>
+            <p>This isn't just a toolbox.</p>
+            <p>
+              It's a set of instructions and expert guidance about how to use
+              the tools to accomplish your goals.
+            </p>
+          </div>
+          <div class="campaign-wrapper">
+            <div class="campaign-box">
+              <h3>I'm running for office.</h3>
+              <p>
+                If you're running for office, or are managing an election
+                campaign, our suite of software, and expertise in how to use
+                them, could make the difference between winning and loosing.
+              </p>
+              <button class="btn btn-black mt-4">LEARN MORE</button>
+            </div>
+            <div class="campaign-box">
+              <h3>I'm advocating for a cause.</h3>
+              <p>
+                If you're advocating for a cause, building a network, or
+                reaching out to donors, supporters or volunteers, our program
+                can professionalize your experience and give you an advantage to
+                make change in the world.
+              </p>
+              <button class="btn btn-black mt-4">LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="office-section">
+        <div class="container">
+          <div class="image-wrapper">
+            <img class="left" src="./assets/images/img_office_left.jpg" />
+            <img class="right" src="./assets/images/img_office_right.jpg" />
+          </div>
+          <div class="mt-12 lg:order-1 lg:mt-0 lg:w-1/2 2xl:w-[40%]">
+            <h2 class="2xl:w-[360px]">I'm Running For Office.</h2>
+            <p>
+              You're a political campaign, and you want to win. Election
+              Assistant has been developed by Canadians for Canadian political
+              campaigns. Our
+              <span class="text-blue-500">suite of software</span> is tailored
+              to manage every aspect of a modern election campaign, allowing you
+              and your team to focus on meeting voters, raising money and
+              training volunteers, rather than moving files back and forth
+              between platforms.
+            </p>
+            <p>
+              Election Assistant is more than just an all in one software
+              package; we offer our expertise in managing elections to help you
+              integrate our programs into your air war, ground game, GOTV and
+              candidate management.
+            </p>
+            <p>
+              Explore about how Election Assistant integrates with your
+              campaign.
+            </p>
+            <button class="btn btn-black mt-8 flex items-center gap-2 lg:px-6">
+              <img src="./assets/images/logo_white.png" width="40" alt="" />
+              <div>LEARN MORE ABOUT <b>ELECTION ASSISTANT</b></div>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="cause-section">
+        <div class="container">
+          <div class="image-wrapper">
+            <img class="top" src="./assets/images/img_cause_top.jpg" />
+            <img class="bottom" src="./assets/images/img_cause_bottom.jpg" />
+          </div>
+          <div class="mt-12 lg:order-1 lg:mt-0 lg:w-1/2 2xl:w-[40%]">
+            <h2>I'm Advocating For a Cause.</h2>
+            <p>
+              Advocating for a cause, and running for office, have many things
+              in common. Big groups of people need to be motivated, volunteers
+              recruited and trained, money raised, time managed effectively, and
+              careful attention to messaging must be paid.
+            </p>
+            <p>
+              That's why Election Assistant's tools are available to charities,
+              non profits, and unions as "On Target," our fully integrated,
+              customizable software package designed for groups that want to
+              make positive change. Explore about how Election Assistant's On
+              Target integrates with your campaign.
+            </p>
+            <p>
+              Explore about how Election Assistant's On Target integrates with
+              your campaign.
+            </p>
+            <button class="btn btn-black mt-8 flex items-center gap-2 lg:px-6">
+              <img src="./assets/images/img_megaphone.png" width="40" alt="" />
+              <div>LEANR MORE ABOUT <b>ON TARGET</b></div>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="book-section">
+        <div class="container">
+          <h1>Get Started Now.</h1>
+          <p class="px-12">
+            Let us show what a difference an all in one campaign software suite
+            can make to your advocacy or electoral aspirations.
+          </p>
+          <button class="btn btn-black mt-8 mb-16">BOOK A DEMO</button>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="nav-wrapper">
+            <img src="./assets/images/logo_white.png" alt="" />
+            <select
+              class="mb-9 w-[280px] rounded bg-black px-6 py-3 text-zinc-300 outline-none lg:hidden"
+            >
+              <option value="">Request a Demo</option>
+              <option selected value="">About our Products</option>
+              <option value="">About Election Assistant</option>
+              <option value="">About your Campaign</option>
+            </select>
+            <div class="footer-navbar">
+              <a href="#" class="nav-items">Request a Demo</a>
+              <a href="#" class="nav-items">About our Products</a>
+              <a href="#" class="nav-items">About Election Assistant</a>
+              <a href="#" class="nav-items">About your Campaign</a>
+              <button class="btn-white 2xl:ml-6">Contact Us</button>
+              <button class="btn-white ml-2 2xl:ml-4">Client Sign In</button>
+            </div>
+          </div>
+          <div
+            class="mt-8 flex flex-col items-center text-zinc-500 lg:flex-row lg:justify-between"
+          >
+            <p>Terms of Service / Privacy Policy</p>
+            <p>&copy 2023 Election Assistant. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="index.js"></script>
+</html>
