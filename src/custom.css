@@ -9,6 +9,15 @@
   @apply text-xs leading-3 text-[#636363];
   @apply md:text-base md:leading-4;
 }
+.mobile-menu {
+  @apply absolute left-0 top-[80px] w-[100vw] sm:top-[100px];
+  @apply border-t border-t-zinc-100 bg-white drop-shadow-lg;
+  @apply hidden peer-open:block;
+}
+.mobile-menu-items {
+  @apply flex h-full cursor-pointer justify-center p-4 font-semibold;
+  @apply border-b border-b-zinc-100 hover:bg-slate-100;
+}
 
 .menu-items {
   @apply h-full cursor-pointer p-4 text-xl font-semibold;
@@ -35,7 +44,7 @@
   @apply pt-12 pb-[70vw] md:pt-12 lg:py-16 2xl:py-32;
   @apply border-t border-b border-t-zinc-200 border-b-zinc-200;
 }
-.banner-wrapper {
+.banner-section .banner-wrapper {
   @apply text-center;
   @apply lg:w-[480px] lg:text-left;
   @apply 2xl:w-[580px];
@@ -54,11 +63,11 @@
 .demo-section p {
   @apply lg:max-w-[480px];
 }
-.form-wrapper {
+.demo-section .form-wrapper {
   @apply flex max-w-[430px] flex-wrap items-center lg:max-w-full;
   @apply border-b border-neutral-200 px-4 py-2;
 }
-.form-control {
+.demo-section .form-control {
   @apply m-0 block flex-auto border-none px-3 py-[0.25rem];
   @apply text-base font-normal leading-[1.6] text-neutral-700 outline-none;
   @apply focus:z-[3] focus:text-neutral-700 focus:outline-none focus:ring-0;
@@ -77,19 +86,19 @@
 .products-section p {
   @apply 2xl:max-w-[580px];
 }
-.products-wrapper {
+.products-section .products-wrapper {
   @apply mx-auto mt-12 flex max-w-[275px] flex-wrap justify-between gap-4;
   @apply sm:max-w-none;
   @apply lg:mt-0 lg:w-[580px] lg:flex-none;
   @apply 2xl:w-[700px];
 }
-.products-block {
+.products-section .products-block {
   @apply flex w-[128px] flex-col items-center gap-4 border border-neutral-200 px-3 py-6;
   @apply md:w-[152px] md:px-4;
   @apply lg:w-[132px] lg:items-start;
   @apply 2xl:w-[158px] 2xl:px-6;
 }
-.products-desc {
+.products-section .products-desc {
   @apply text-center text-sm font-bold leading-4;
   @apply md:text-base md:leading-5;
   @apply lg:text-left;
@@ -250,4 +259,81 @@ footer .footer-navbar {
 }
 .footer-navbar .nav-items {
   @apply px-3 2xl:px-10;
+}
+
+/* Products Template Settings */
+
+.products-banner-section {
+  @apply py-12 lg:py-16 2xl:py-24;
+  @apply border-t border-t-zinc-200 bg-neutral-100;
+}
+.products-banner-section .banner-wrapper {
+  @apply text-center;
+  @apply mb-12 lg:mb-16 2xl:mb-24;
+  @apply lg:mx-36 2xl:mx-60;
+}
+.products-banner-section #accordion {
+  @apply mb-8 bg-none lg:mb-0;
+}
+.products-banner-section .accordion-wrapper {
+  @apply border border-l-0 border-r-0 border-t-0 border-neutral-200;
+  @apply rounded-none bg-none;
+  /* @apply dark:border-neutral-600 dark:bg-neutral-800; */
+}
+.products-banner-section .accordion-button {
+  @apply relative flex w-full items-center rounded-none border-0 bg-none py-4 pl-5 pr-7;
+  @apply text-left text-lg font-semibold text-neutral-400 transition 2xl:text-2xl;
+}
+.products-banner-section .accordion-title {
+  @apply ml-3;
+}
+.products-banner-section .accordion-bodytext {
+  @apply pr-8 pb-4 pl-12;
+}
+
+.our-products-section .products-banner {
+  @apply w-full bg-[url("../src/assets/images/banner_products_desktop.jpg")] bg-cover text-white;
+  @apply py-8 lg:py-16 2xl:py-20;
+}
+.our-products-section p {
+  @apply lg:max-w-[630px];
+}
+.our-products-section .products-wrapper {
+  @apply bg-[#f1f1f9] py-12;
+}
+.our-products-section .products-wrapper .container {
+  @apply grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8;
+}
+.our-products-section .products-block {
+  @apply flex flex-col items-center justify-center gap-4;
+  @apply border border-neutral-200 bg-white;
+  @apply p-3 2xl:py-6 2xl:px-5;
+  @apply hover:cursor-pointer hover:bg-neutral-800 hover:text-white;
+}
+.our-products-section .products-block + .products-block {
+  @apply border-l-0;
+}
+.our-products-section .products-desc {
+  @apply text-center text-sm font-bold leading-4;
+  @apply md:text-base md:leading-5;
+  @apply 2xl:text-lg;
+}
+
+.source-section {
+  @apply py-8 sm:py-12 lg:py-16 2xl:py-20;
+}
+.source-section.even {
+  @apply bg-slate-50;
+}
+.source-section .container {
+  @apply flex flex-col sm:gap-8 lg:flex-row lg:gap-16 2xl:gap-28;
+}
+.source-section .container img {
+  @apply w-full rounded-xl drop-shadow-lg;
+}
+.source-section.odd .container > div:first-child {
+  @apply lg:order-2;
+}
+.source-section .source-title {
+  @apply mt-6 mb-4 text-lg font-bold text-indigo-600 sm:text-xl md:text-2xl lg:mt-0;
 }

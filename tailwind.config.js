@@ -2,7 +2,10 @@
 
 module.exports = {
   darkMode: "class",
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    "./src/**/*.{html,js}",
+    "./node_modules/tw-elements/dist/js/**/*.js",
+  ],
   theme: {
     extend: {},
     screens: {
@@ -16,5 +19,9 @@ module.exports = {
       marydale: ['"Marydale"', "sans-serif"],
     },
   },
-  plugins: [require("@tailwindcss/forms"), require("./plugins/openVariant")],
+  plugins: [
+    require("tw-elements/dist/plugin"),
+    require("@tailwindcss/forms"),
+    require("./plugins/openVariant"),
+  ],
 };
